@@ -66,10 +66,10 @@
 
                 default_layer {
 // -------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  |   BSPC    |
+// |      |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  |   BSPC    |
 // |  ESC |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |    '      |
 // |      |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  |   RET     |
-//                    | NUM | SYM | NAV || SPC/NAV |    | WIN
+//                    | NUM | SYM | BSPC/NAV | SPC/NAV | WIN | MSE |
                         bindings = <
            &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI
    &kp ESC &hm LCTRL A &hm LALT R &hm LGUI S &hm LSHFT T &kp G   &kp M &hm RSHFT N  &hm RGUI E &hm LALT I &hm RCTRL O &kp SQT
@@ -80,14 +80,14 @@
 
                 sym_layer {
 // ----------------------------------------------------------------------------
-// |    |  !  |  @  |  {  |  }  | "|" |   |  &  |  *  |  <  |  >  |     |     |
-// |    |  #  |  $  |  (  |  )  |  `  |   |  -  |  =  |  +  |  _  |     |     |
-// |    |  %  |  ^  |  [  |  ]  |  ~  |   |  /  |     |     |     |     |     |
+// |    |  !  |  @  |  {  |  }  | "|" |   |  &  |  *  |  <  |  >  |  ;  |     |
+// |    |  #  |  $  |  (  |  )  |  `  |   |  -  |  =  |  +  |  _  |  '  |     |
+// |    |  %  |  ^  |  [  |  ]  |  ~  |   |  /  |  ?  |  ,  |  .  |  /  |     |
 //                       |     |     |     |    |     |
                         bindings = <
-          &kp EXCL  &kp AT   &kp LBRC &kp RBRC &kp PIPE        &kp AMPS &kp ASTRK &kp LT  &kp GT  &trans
-   &trans &kp HASH  &kp DLLR &kp LPAR &kp RPAR &kp GRAVE       &kp MINUS &kp EQUAL &kp PLUS &kp UNDER &trans &trans
-   &trans &kp PRCNT &kp CARET &kp LBKT &kp RBKT &kp TILDE      &kp BSLH &none  &trans &trans &trans &trans
+          &kp EXCL  &kp AT   &kp LBRC &kp RBRC &kp PIPE       &kp AMPS &kp ASTRK &kp LT  &kp GT  &kp SEMI
+   &trans &kp HASH  &kp DLLR &kp LPAR &kp RPAR &kp GRAVE      &kp MINUS &kp EQUAL &kp PLUS &kp UNDER &kp SQT &trans
+   &trans &kp PRCNT &kp CARET &kp LBKT &kp RBKT &kp TILDE     &kp BSLH &kp QMARK &kp COMMA &kp DOT &kp FSLH &trans
                         &trans       &trans      &trans       &trans         &trans   &trans
                         >;
                 };
@@ -102,7 +102,7 @@
           &none     &none     &none     &none     &none         &none &kp PG_UP &kp UP &none &kp INS
    &trans &kp LCTRL &kp LALT  &kp LGUI  &kp LSHFT &none         &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END &none
    &kp K_APP &kp LG(Z) &kp LG(X) &kp LG(C) &none &kp LG(V)         &kp LS(LC(TAB)) &kp PG_DN &none &none &kp LC(TAB) &none
-                        &trans       &trans      &kp DEL       &trans        &trans     &trans
+                        &trans       &trans      &kp DEL       &kp TAB        &trans     &trans
                         >;
                 };
 
