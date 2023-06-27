@@ -135,6 +135,19 @@
                         >;
                 };
 
+                mse_layer {
+// ----------------------------------------------------------------------------
+// |    |     |     |     |     |     |   |     |     |     |     |     |     |
+// |    |     |     |     |     |     |   |     |     |     |     |     |     |
+// |    |     |     |     |     |     |   |     |     |     |     |     |     |
+//                       |     |     |     |    |     |
+                        bindings = <
+          &none     &none     &none     &none     &none         &none     &none    &none     &none     &none
+   &none  &none     &none     &none     &none     &none         &none     &none    &none     &none     &none     &none
+   &none  &none     &none     &none     &none     &none         &none     &none    &none     &none     &none     &none
+                              &trans    &trans    &trans        &trans    &trans   &trans
+                        >;
+                };
     };
 };
 
