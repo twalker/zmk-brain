@@ -1,4 +1,5 @@
 # Introduction
+** This is a copy of the [iamDrakkir/zmk-config](https://github.com/iamDrakkir/zmk-config) config for the brain keyboard. **
 
 This is for the zmk layout for the brain and sweep/urchin keyboards.
 It contains swedish characters and swedish symbol codes
