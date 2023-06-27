@@ -16,6 +16,7 @@
 #define NAV     2
 #define NUM     3
 #define WIN     4
+#define MSE     5
 
 / {
     behaviors {
@@ -94,14 +95,14 @@
 
                 nav_layer {
 // ----------------------------------------------------------------------------------
-// |    |     |     |     |     |     |   |     |     | PGUP | UP |      | INS | DEL |
+// |    |     |     |     |     |     |   |     |     | PGUP | UP |      | INS |     |
 // |    | CTRL| ALT | GUI | SHFT|     |   |     | HOME| LEFT |DOWN|RIGHT | END |     |
-// |MENU| UNDO| CUT |COPY |     | PSTE|   |     | <tab| PGDN |    |      | tab>|     |
+// |    | UNDO| CUT |COPY | MENU| PSTE|   |     | <tab| PGDN |    |      | tab>|     |
 //                       |     |     |     |    |     |
                         bindings = <
           &none     &none     &none     &none     &none         &none &kp PG_UP &kp UP &none &kp INS
    &trans &kp LCTRL &kp LALT  &kp LGUI  &kp LSHFT &none         &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END &none
-   &kp K_APP &kp LG(Z) &kp LG(X) &kp LG(C) &none &kp LG(V)         &kp LS(LC(TAB)) &kp PG_DN &none &none &kp LC(TAB) &none
+   &trans &kp LG(Z) &kp LG(X) &kp LG(C) &kp K_APP &kp LG(V)     &kp LS(LC(TAB)) &kp PG_DN &none &none &kp LC(TAB) &none
                         &trans       &trans      &kp DEL       &kp TAB        &trans     &trans
                         >;
                 };
@@ -121,5 +122,20 @@
                 };
 
     };
+
+                win_layer {
+// -----------------------------------------------------------------------------------------------------------------------------
+// |       |          |          | VOL_UP     |          |BT_CLR   |   |         | ZOOM +| WIN U | WIN LG  |         |        |
+// |       |          | PREV     | PLAY       | NEXT     |BT 0     |   |SCRNSHOT | WIN L | WIN D | WIN R   |  FULL   |        |
+// |       |          |          | VOL_DN     | MUTE     |BT 1     |   |         | ZOOM -|       | WIN SM  |         |        |
+//                                              |     |     |     |     |     |
+                        bindings = <
+         &none &none &kp C_VOL_UP &none &bt BT_CLR                           &none &kp LG(EQUAL) &kp LC(LA(UP)) &kp LC(LA(I)) &kp LC(LA(EQUAL))
+   &none &none &kb C_PREV &kp C_PLAY &kp C_NEXT &bt BT_SEL 0                 &kp LS(LG(5)) &kp LC(LA(LEFT)) &kp LC(LA(DOWN)) &kp LC(LA(RIGHT)) &kp LC(LA(RET)) &none
+   &none &none &none &kp C_VOL_DN &kp C_MUTE &bt BT_SEL 1                    &none &kp LG(MINUS) &none &kp LC(LA(K)) &kp LC(LA(MINUS)) &none
+                        &trans     &trans      &trans       &trans        &trans      &trans
+                        >;
+                };
+        };
 };
 
