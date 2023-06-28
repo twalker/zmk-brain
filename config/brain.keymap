@@ -75,7 +75,7 @@
            &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI
    &kp ESC &hm LCTRL A &hm LALT R &hm LGUI S &hm LSHFT T &kp G   &kp M &hm RSHFT N  &hm RGUI E &hm LALT I &hm RCTRL O &kp SQT
    &none &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp RET
-                        &mo NUM  &mo SYM &lt NAV BSPC &lt NAV SPACE &mo WIN &none
+                        &mo NUM  &mo SYM &lt NAV BSPC &lt NAV SPACE &lt WIN RET &mo MSE
                         >;
                 };
 
