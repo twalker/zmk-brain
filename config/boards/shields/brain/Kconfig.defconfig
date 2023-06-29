@@ -16,3 +16,8 @@ if SHIELD_BRAIN_LEFT || SHIELD_BRAIN_RIGHT
 config ZMK_SPLIT
     default y
 endif
+
+
+config CONFIG_ZMK_MOUSE
+    default y
+

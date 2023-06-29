@@ -12,8 +12,6 @@
 #include <dt-bindings/zmk/mouse.h>
 
 
-CONFIG_ZMK_MOUSE=y
-
 #define DEFAULT 0
 #define SYM     1
 #define NAV     2
