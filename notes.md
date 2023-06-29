@@ -1,15 +1,13 @@
+This is the original mouse keys PR: https://github.com/zmkfirmware/zmk/pull/778
+This is a fork that was rebased much more recently, and some additional fixes: https://github.com/urob/zmk/tree/mouse-3.2
 
-                win_layer {
-// -----------------------------------------------------------------------------------------------------------------------------
-// |       |          |          | VOL_UP     |          |BT_CLR   |   |         | ZOOM +| WIN U | WIN LG  |         |        |
-// |       |          | PREV     | PLAY       | NEXT     |BT 0     |   |SCRNSHOT | WIN L | WIN D | WIN R   |  FULL   |        |
-// |       |          |          | VOL_DN     | MUTE     |BT 1     |   |         | ZOOM -|       | WIN SM  |         |        |
-//                                              |     |     |     |     |     |
-                        bindings = <
-         &none &none &kp C_VOL_UP &none &bt BT_CLR                           &none &kp LG(EQUAL) &kp LC(LA(UP)) &kp LC(LA(I)) &kp LC(LA(EQUAL))
-   &none &none &kb C_PREV &kp C_PLAY &kp C_NEXT &bt BT_SEL 0                 &kp LS(LG(5)) &kp LC(LA(LEFT)) &kp LC(LA(DOWN)) &kp LC(LA(RIGHT)) &kp LC(LA(RET)) &none
-   &none &none &none &kp C_VOL_DN &kp C_MUTE &bt BT_SEL 1                    &none &kp LG(MINUS) &none &kp LC(LA(K)) &kp LC(LA(MINUS)) &none
-                        &trans     &trans      &trans       &trans        &trans      &trans
-                        >;
-                };
-        };
+You can test it following the instructions at https://zmk.dev/docs/features/beta-testing. Note that you have to unpair your keyboard and repair (and potentially restart your computer in between) after flashing for the mouse descriptor to work.
+
+There is some documentation here: https://deploy-preview-778--zmk.netlify.app/docs/behaviors/mouse-emulation
+See this file in lieu of the broken link on the page: https://github.com/urob/zmk/blob/mouse-3.2/app/include/dt-bindings/zmk/mouse.h
+---
+https://github.com/twalker/cloud-learning/blob/main/base-keymap.md
+https://gist.github.com/krissen/dd27082e7ab0575619c7a31f4d2ec7ae
+https://github.com/urob/zmk/blob/mouse-3.2/app/include/dt-bindings/zmk/mouse.h
+
+---
