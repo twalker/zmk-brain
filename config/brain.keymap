@@ -68,27 +68,27 @@
 
                 default_layer {
 // -------------------------------------------------------------------------------------
-// |      |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  |   BSPC    |
-// |  ESC |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |    '      |
-// |      |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  |   RET     |
+// |      |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  '  |           |
+// |      |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |           |
+// |      |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  |           |
 //                    | NUM | SYM | BSPC/NAV | SPC/NAV | WIN | MSE |
                         bindings = <
-           &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI
-   &kp ESC &hm LCTRL A &hm LALT R &hm LGUI S &hm LSHFT T &kp G   &kp M &hm RSHFT N  &hm RGUI E &hm LALT I &hm RCTRL O &kp SQT
-   &none &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp RET
-                        &mo NUM  &mo SYM &lt NAV BSPC &lt NAV SPACE &lt WIN RET &mo MSE
+           &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SQT
+   &none &hm LCTRL A &hm LALT R &hm LGUI S &hm LSHFT T &kp G   &kp M &hm RSHFT N  &hm RGUI E &hm LALT I &hm RCTRL O &none
+   &none &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &none
+                        &mo NUM  &lt SYM ESC &lt NAV BSPC &lt NAV SPACE &lt MSE RET &mo WIN
                         >;
                 };
 
                 sym_layer {
 // ----------------------------------------------------------------------------
-// |    |  !  |  @  |  {  |  }  | "|" |   |  &  |  *  |  <  |  >  |  ;  |     |
-// |    |  #  |  $  |  (  |  )  |  `  |   |  -  |  =  |  +  |  _  |  '  |     |
+// |    |  !  |  @  |  {  |  }  | "|" |   |  &  |  *  |  <  |  >  |  '  |     |
+// |    |  #  |  $  |  (  |  )  |  `  |   |  -  |  =  |  +  |  _  |  ;  |     |
 // |    |  %  |  ^  |  [  |  ]  |  ~  |   |  /  |  ?  |  ,  |  .  |  /  |     |
 //                       |     |     |     |    |     |
                         bindings = <
-          &kp EXCL  &kp AT   &kp LBRC &kp RBRC &kp PIPE       &kp AMPS &kp ASTRK &kp LT  &kp GT  &kp SEMI
-   &trans &kp HASH  &kp DLLR &kp LPAR &kp RPAR &kp GRAVE      &kp MINUS &kp EQUAL &kp PLUS &kp UNDER &kp SQT &trans
+          &kp EXCL  &kp AT   &kp LBRC &kp RBRC &kp PIPE       &kp AMPS &kp ASTRK &kp LT  &kp GT  &kp SQT
+   &trans &kp HASH  &kp DLLR &kp LPAR &kp RPAR &kp GRAVE      &kp MINUS &kp EQUAL &kp PLUS &kp UNDER &kp SEMI &trans
    &trans &kp PRCNT &kp CARET &kp LBKT &kp RBKT &kp TILDE     &kp BSLH &kp QMARK &kp COMMA &kp DOT &kp FSLH &trans
                         &trans       &trans      &trans       &trans         &trans   &trans
                         >;
