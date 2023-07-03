@@ -47,21 +47,15 @@
 │22 23 24 25 26 27│ │28 29 30 31 32 33│
 ╰────────╮34 35 36│ │37 38 39╭────────╯
          ╰────────╯ ╰────────╯       */
-/*    combos {
+      combos {
         compatible = "zmk,combos";
 
         combo_capsword {
               timeout-ms = <50>;
-              key-positions = <16 19>;
+              key-positions = <14 17>;
               bindings = <&caps_word>;
         };
-
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-    }; */
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -147,7 +141,7 @@
           &none     &none &mmv MOVE_UP &none     &none         &none     &mwh SCROLL_UP    &none     &none     &none
    &none  &none     &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none         &mwh SCROLL_LEFT &mkp LCLK &mkp MCLK &mkp RCLK &mwh SCROLL_RIGHT  &none
    &none  &none     &none     &none     &none     &none         &none     &mwh SCROLL_DOWN    &none     &none     &none     &none
-                              &trans    &trans    &trans        &trans    &trans   &trans
+                              &trans    &kp LCTRL &kp LSHFT     &trans    &trans   &trans
                         >;
                 };
     };
