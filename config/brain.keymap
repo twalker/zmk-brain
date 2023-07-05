@@ -19,6 +19,10 @@
 #define WIN     4
 #define MSE     5
 
+&lt {
+  quick_tap_ms = <200>;
+};
+
 / {
     behaviors {
         hm: homerow_mods {
@@ -26,7 +30,7 @@
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -35,7 +39,7 @@
             label = "HOMEROW_MODS_SLOW";
             #binding-cells = <2>;
             tapping-term-ms = <160>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
