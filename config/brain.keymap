@@ -29,7 +29,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <160>;
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -38,7 +38,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_SLOW";
             #binding-cells = <2>;
-            tapping-term-ms = <160>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -72,7 +72,7 @@
 //                    | NUM | SYM | BSPC/NAV | SPC/NAV | WIN | MSE |
                         bindings = <
            &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SQT
-   &none &hm LCTRL A &hm LALT R &hm LGUI S &hm LSHFT T &kp G   &kp M &hm RSHFT N  &hm RGUI E &hm LALT I &hm RCTRL O &none
+   &none &hm LCTRL A &hs LALT R &hm LGUI S &hm LSHFT T &kp G   &kp M &hm RSHFT N  &hm RGUI E &hs LALT I &hm RCTRL O &none
    &none &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &none
                         &mo NUM  &lt SYM ESC &lt NAV BSPC &lt NAV SPACE &lt MSE RET &mo WIN
                         >;
