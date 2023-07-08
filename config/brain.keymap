@@ -101,7 +101,7 @@
                         bindings = <
           &none     &none     &none     &none     &none         &none &kp PG_UP &kp UP &none &kp INS
    &trans &kp LCTRL &kp LALT  &kp LGUI  &kp LSHFT &none         &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END &none
-   &trans &kp LG(Z) &kp LG(X) &kp LG(C) &kp K_APP &kp LG(V)     &kp LS(LC(TAB)) &kp PG_DN &none &none &kp LC(TAB) &none
+   &trans &kp LG(Z) &kp LG(X) &kp LG(C) &kp K_APP &kp LG(V)     &kp LS(LC(TAB)) &kp PG_DN &none &none &kp RC(TAB) &none
                         &trans       &trans      &kp DEL       &kp TAB        &trans     &trans
                         >;
                 };
