@@ -128,9 +128,9 @@
 // |       |          |          | VOL_DN     | MUTE     |BT 1     |   |         | ZOOM -|       | WIN SM  |         |        |
 //                                              |     |     |     |     |     |
                         bindings = <
-         &none &none &kp C_VOL_UP &none &bt BT_CLR                           &none &kp LG(EQUAL) &kp LC(LA(UP)) &kp LC(LA(I)) &kp LC(LA(EQUAL))
-   &none &none &kp C_PREV &kp C_PP &kp C_NEXT &bt BT_SEL 0                 &kp LS(LG(5)) &kp LC(LA(LEFT)) &kp LC(LA(DOWN)) &kp LC(LA(RIGHT)) &kp LC(LA(RET)) &none
-   &none &none &none &kp C_VOL_DN &kp C_MUTE &bt BT_SEL 1                    &none &kp LG(MINUS) &none &kp LC(LA(K)) &kp LC(LA(MINUS)) &none
+         &none &none &kp C_VOL_UP &none &bt BT_CLR                           &none &kp LG(EQUAL) &kp RC(LA(UP)) &kp RC(LA(I)) &kp RC(LA(EQUAL))
+   &none &none &kp C_PREV &kp C_PP &kp C_NEXT &bt BT_SEL 0                 &kp LS(LG(5)) &kp RC(LA(LEFT)) &kp RC(LA(DOWN)) &kp RC(LA(RIGHT)) &kp RC(LA(RET)) &none
+   &none &none &none &kp C_VOL_DN &kp C_MUTE &bt BT_SEL 1                    &none &kp LG(MINUS) &none &kp RC(LA(K)) &kp RC(LA(MINUS)) &none
                         &trans     &trans      &trans       &trans        &trans      &trans
                         >;
                 };
