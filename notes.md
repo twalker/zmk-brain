@@ -11,3 +11,18 @@ https://gist.github.com/krissen/dd27082e7ab0575619c7a31f4d2ec7ae
 https://github.com/urob/zmk/blob/mouse-3.2/app/include/dt-bindings/zmk/mouse.h
 
 ---
+
+    macros {
+      ballspd: ballspd {
+        label = "ballspd";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+          = <&kp NLCK>
+          , <&kp NLCK>
+          , <&kp CLCK>
+          , <&kp CLCK>
+          ;
+      };
+    };
+---
