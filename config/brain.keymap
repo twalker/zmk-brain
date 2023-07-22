@@ -38,8 +38,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_SLOW";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
