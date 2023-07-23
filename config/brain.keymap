@@ -38,14 +38,14 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_SLOW";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
         hf: homerow_mods_fast {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_SLOW";
+            label = "HOMEROW_MODS_FAST";
             #binding-cells = <2>;
             tapping-term-ms = <110>;
             quick-tap-ms = <200>;
@@ -93,7 +93,7 @@
                         bindings = <
            &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SQT
    &none &hm LCTRL A &hs LALT R &hm LGUI S &hf LSHFT T &kp G   &kp M &hf RSHFT N  &hm RGUI E &hs LALT I &hm RCTRL O &none
-   &none &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &none
+   &none &lt NUM Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &lt WIN FSLH &none
                         &mo NUM  &lt SYM ESC &lt NAV BSPC &lt NAV SPACE &lt MSE RET &mo WIN
                         >;
                 };
@@ -133,10 +133,10 @@
 // |    | F9  | F10 | F11 | F12 |     |   |     |  1  |  2  |  3  |     |     |
 //                       |     |     |     | 0  |  .  |
                         bindings = <
-          &kp F1    &kp F2    &kp F3    &kp F4    &none         &none     &kp N7    &kp N8    &kp N9    &none
+          &kp F1    &kp F2    &kp F3    &kp F4    &none         &none     &kp N7    &kp N8    &kp N9    &kp &N0
    &trans &kp F5    &kp F6    &kp F7    &kp F8    &none         &none     &kp N4    &kp N5    &kp N6    &none     &none
    &trans &kp F9    &kp F10   &kp F11   &kp F12   &none         &none     &kp N1    &kp N2    &kp N3    &none     &none
-                        &trans      &trans      &trans         &trans     &kp N0      &kp DOT
+                        &trans      &trans      &trans         &none     &none    &none
                         >;
                 };
 
