@@ -92,9 +92,9 @@
 //                    | NUM | SYM | BSPC/NAV | SPC/NAV | WIN | MSE |
                         bindings = <
            &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SQT
-   &kp ESC &hm LCTRL A &hs LALT R &hm LGUI S &hf LSHFT T &kp G   &kp M &hf RSHFT N  &hm RGUI E &hs LALT I &hm RCTRL O &none
+   &none   &hm LCTRL A &hs LALT R &hm LGUI S &hf LSHFT T &kp G   &kp M &hf RSHFT N  &hm RGUI E &hs LALT I &hm RCTRL O &none
    &none &lt NUM Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &lt WIN FSLH &none
-                        &mo NUM  &mo SYM &lt NAV BSPC &lt NAV SPACE &lt MSE RET &mo WIN
+                        &mo NUM &lt SYM ESC &lt NAV BSPC &lt NAV SPACE &lt MSE RET &mo WIN
                         >;
                 };
 
