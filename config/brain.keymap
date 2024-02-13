@@ -53,6 +53,27 @@
             bindings = <&kp>, <&kp>;
         };
     };
+
+    combos {
+        compatible = "zmk,combos";
+
+        combo_capsword {
+              timeout-ms = <50>;
+              key-positions = <14 17>;
+              bindings = <&caps_word>;
+        };
+    };
+
+    macros {
+        ball_speed: ball_speed {
+            label = "ball_speed";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp CAPS &kp CAPS &kp NUM &kp NUM>
+                ;
+        };
+    };
 /*           40 Keys
 ╭─────────────────╮ ╭─────────────────╮
 │    0  1  2  3  4│ │ 5  6  7  8  9   │
@@ -151,7 +172,7 @@
 // |    |     |     |     |     |     |   |     | WHDN|     |     |     |     |
 //                       |     |     |     |    |     |
                         bindings = <
-          &none     &none &mmv MOVE_UP &none     &none         &none     &none    &none     &none     &none
+          &none     &none &mmv MOVE_UP &none     &none         &ball_speed     &none    &none     &none     &none
    &none  &none     &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none         &none &mkp MB1 &mkp MB2 &mkp MB3 &none  &none
    &none  &none     &none     &none     &none     &none         &none     &none   &none     &none     &none     &none
                               &trans    &kp LCTRL &kp LSHFT     &trans    &trans   &trans
